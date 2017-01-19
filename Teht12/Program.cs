@@ -18,7 +18,7 @@ namespace Teht12
                     int[] luvut = new int[5];
                     luvut[i] = luku;
                 }
-            for (j = 5; j >= luvut.Lenght; j--) Console.WriteLine("luku" );
+            for (j = 5; j >= luvut.Lenght; j--) Console.WriteLine("luku");
             Console.ReadLine();
         }
     }
