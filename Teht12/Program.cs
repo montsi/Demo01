@@ -11,14 +11,16 @@ namespace Teht12
         static void Main(string[] args)
         {
             int i, j;
-            for (i = 0; i <= 4; i++) 
+            int[] luvut = new int[5];   // tehdään luvut taulukko
+            for (i = 0; i <= 4; i++)    // pyydetään ja luetaan viisi lukua taulukkoon
                 {
                     Console.Write("Anna luku: ");
-                    int luku = int.Parse(Console.ReadLine());
-                    int[] luvut = new int[5];
+                    int luku = int.Parse(Console.ReadLine());                    
                     luvut[i] = luku;
                 }
-            for (j = 5; j >= luvut.Lenght; j--) Console.WriteLine("luku");
+            Console.Write("Luvut päinvastaisessa järjestyksessä ovat: ");
+            for (j = 4; j >= 1; j--) Console.Write(luvut[j] + ", "); // tulostetaan aloittaen viimeisestä
+            Console.Write("ja " + luvut[0]);                           // tulostetaan viimeinen ilman pilkkua perässä
             Console.ReadLine();
         }
     }
